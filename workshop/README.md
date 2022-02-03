@@ -2,11 +2,11 @@
 
 In this workshop, we will discuss *the use of Microsoft Azure for Text Analytics to analyze the sentiments of Azure users*.
 
-| **Project Goal**              | *describe the goal of the project*                                    |
+| **Project Goal**              | *Learn how to use AI Text Analytics to extract meaningful insights from text*                                    |
 | ----------------------------- | --------------------------------------------------------------------- |
-| **What will you learn**       | *describe your learning goals*                                        |
-| **What you'll need**          | *link all the necessary tooling, subscriptions, and downloads needed* |
-| **Duration**                  | *specify the duration*                                                                |
+| **What will you learn**       | *How to use Azure Text Analytics Cognitive Service, How to analyze and visualize data with Python*                                        |
+| **What you'll need**          | *[Azure Subscription](https://azure-for-academics.github.io/getting-azure), ability to run [Jupyter Notebook](https://soshnikov.com/education/how-to-execute-notebooks-from-github/)* |
+| **Duration**                  | *1hr-1.5 hours*                                                                |
 | **Just want to try the app or see the solution?** | *a link to the completed project sample app or solution folder*                          |
 | **Slides** | [Powerpoint](slides.pptx)                          |
 
