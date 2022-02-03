@@ -1,6 +1,6 @@
-# Workshop Title
+# Sentiment Analysis on Verbatim User Feedback on Microsoft Azure for Text Analytics
 
-In this workshop, we will discuss *insert your topic*.
+In this workshop, we will discuss *the use of Microsoft Azure for Text Analytics to analyze the sentiments of Azure users*.
 
 | **Project Goal**              | *describe the goal of the project*                                    |
 | ----------------------------- | --------------------------------------------------------------------- |
