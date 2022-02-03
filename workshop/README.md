@@ -1,4 +1,4 @@
-# Sentiment Analysis on Verbatim User Feedback on Microsoft Azure for Text Analytics
+# Sentiment Analysis on Verbatim User Feedback using Microsoft Azure for Text Analytics
 
 In this workshop, we will discuss *the use of Microsoft Azure for Text Analytics to analyze the sentiments of Azure users*.
 
