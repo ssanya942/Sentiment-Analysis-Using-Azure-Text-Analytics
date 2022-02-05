@@ -1,0 +1,11 @@
+Probably the interface could be a more user friendly
+Azure IOT can be improved a lot
+Lack in demonstration 
+I'd say sometimes it's overwhelming for business practitioners due to its compact design so maybe user interface could be made more business friendly (especially for companies in countries with non-english native language such as Japan)
+Have to do more research on it
+The time taken to deploy 
+It is not as scalable 
+It has a slower interface. 
+When creating a VM Fails
+The free credits last only 6 months :(
+When I started to use it, I found the interface a bit tricky to get to grips with
