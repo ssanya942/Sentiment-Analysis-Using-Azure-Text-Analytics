@@ -12,11 +12,12 @@ In this workshop, we will discuss *the use of Microsoft Azure for Text Analytics
 
 ## Pre-Learning
 
-*add a link to MS Learn for students to pre-learn the topic, if possible*
+*Check out [Cognitive Services for Language](https://docs.microsoft.com/en-us/learn/paths/explore-natural-language-processing/)*
 
 ## Prerequisites
 
-*any installations that will be helpful, any hardware or software needed*
+*Install [VS Code](https://code.visualstudio.com/download)*
+*Install [Python](https://www.python.org/downloads/)
 
 ## What students will learn
 
