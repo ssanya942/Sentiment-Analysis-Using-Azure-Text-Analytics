@@ -16,7 +16,7 @@ In this workshop, we will discuss *the use of Microsoft Azure for Text Analytics
 
 ## Prerequisites
 
-*Install [VS Code](https://code.visualstudio.com/download)*
+*Install [VS Code](https://code.visualstudio.com/download)* <br>
 *Install [Python](https://www.python.org/downloads)*
 
 ## What students will learn
