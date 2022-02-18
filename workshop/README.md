@@ -16,15 +16,16 @@ In this workshop, we will discuss *the use of Microsoft Azure for Text Analytics
 
 ## Prerequisites
 
-*For this workshop <br> 
-you need to have an Azure Account. You can get either the [Azure for Students](https://azure.microsoft.com/en-us/free/students/?WT.mc_id=academic-49822-dmitryso) version or use [Azure Free Trial](https://azure.microsoft.com/en-us/free/?WT.mc_id=academic-49822-dmitryso)* <br>
-*Remember to install [Python](https://www.python.org/downloads)*
+*For this workshop:*  <br> 
+1. You need to have an Azure Account. You can get either the [Azure for Students](https://azure.microsoft.com/en-us/free/students/?WT.mc_id=academic-49822-dmitryso) version or use the [Azure Free Trial](https://azure.microsoft.com/en-us/free/?WT.mc_id=academic-49822-dmitryso) version <br>
+2. You need to have working knowledge of [Jupyter Notebooks](https://jupyter.org/) on your local machine. Alternatively, you can locally install [Python](https://www.python.org/downloads/) and use it on [VS Code](https://code.visualstudio.com/download) or on [Github Codespaces](https://github.com/features/codespaces)<br>
+
 
 ## What students will learn
 
 *In this workshop, students would learn to use Azure's Text Analytics service for performing a sentiment analysis on user data.*
 
-*add a screenshot of the completed project*
+*add a screenshot of the completed *
 
 ![image of completed project](images/placeholder.png)
 
