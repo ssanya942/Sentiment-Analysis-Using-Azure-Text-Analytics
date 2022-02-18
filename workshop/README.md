@@ -41,7 +41,7 @@ The data has been manually aggregated by collecting feedback from Azure users. C
 > *If you are an Azure user, you could amplify our database of user feedback by filling up this [feedback form.](https://forms.office.com/r/M5EuyHbTB3) The required modifications would be made in the data in this repository itself.*
 
 ## Milestone 2: Running the Notebook and Exploring the Data
-After you get the data, you need to open .......ipynb or Detailed.ipynb notebook and start writing code there, following the instructions inside the notebook.
+After you get the data, you need to create a new ipython notebook or Detailed.ipynb notebook and start writing code there, following the instructions inside the notebook.
 
 Note: There are two versions of the notebooks provided, and you can chose the one most suitable to you:
 There is also a notebook with the solution, which you can consult should you experience a problem you are not able to solve. However, we suggest you to try and solve all the problems yourself, using stack overflow as a reference to find solutions.
@@ -190,7 +190,7 @@ top_words
 
 You can also view a scatterplot of the sentiments conveyed by the users.
 
-![Scatterplot]
+![Scatter plot](images/scatterplot.jpg)
 
 
 
