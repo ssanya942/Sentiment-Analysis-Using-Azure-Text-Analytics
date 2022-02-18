@@ -59,7 +59,7 @@ After the creation of the resource, navigate to the *Keys and Endpoints* option 
 In order to call this service, the key and endpoint must be noted and copied.
 
 ```python
-//from azure.core.credentials import AzureKeyCredential
+from azure.core.credentials import AzureKeyCredential
 from azure.ai.textanalytics import TextAnalyticsClient, AnalyzeSentimentAction, ExtractKeyPhrasesAction
 
 credential = AzureKeyCredential("paste_your_key_here")
@@ -85,6 +85,17 @@ analyze(["I was so glad to be a part of this festival"])
 
 ```
 This code snippet is used to accept the text "*I was so glad to be a part of this festival*" and analyze the sentiment trying to be conveyed by the user. It returns the input string, the sending success message, the positive score,the negative score, the neutral score and the key. 
+The output for the aforementioned code snippet depicts a positive score of 1.0 and a negative and a neutral score of 0.0 respectively. This indicates that the general sentiment expressed by the user was positive.
+
+```
+[{'doc': 'I was so glad to be a part of this festival',
+  'sent': 'positive',
+  'pos_score': 1.0,
+  'neg_score': 0.0,
+  'neu_score': 0.0,
+  'key': ['part', 'festival']}]
+```
+
 
 ## Milestone 4
 
