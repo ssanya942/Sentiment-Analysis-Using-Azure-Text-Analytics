@@ -97,13 +97,45 @@ The output for the aforementioned code snippet depicts a positive score of 1.0 a
 ```
 
 
-## Milestone 4
+## Process the Data
+Now, the data collected must be finally processed to derive sentimental insights from them. 
+Analyzing the first 10 records:
 
-```javascript
-//code snippets to aid in the building process
+```python
+def analyzex(l):
+    res = []
+    for i in range(0,len(l),10):
+        res.extend(analyze(l[i:i+10]))
+    return res
+
+dt = {}
+for k,v in data.items():
+    print(f"Processing {k}")
+    dt[k] = analyzex(v)
 ```
+Once all the data files have been processed, the analysis is pickled, so that it can be retrieved at a later date. 
 
-> *tips, tricks, callouts*
+```python
+import pickle
+with open('data.pkl','wb') as f:
+    pickle.dump(dt,f)
+
+```
+Text Analytics Service can now perform sentiment analysis on the user feedback to express the general sentiment the Azure user intends to convey.
+One example of sentriment analysis is attached below.
+```
+{'Azpositive.txt': [{'doc': 'the sheer performance and the simplification of complex tasks with less prequisitives.',
+   'sent': 'neutral',
+   'pos_score': 0.05,
+   'neg_score': 0.13,
+   'neu_score': 0.82,
+   'key': ['sheer performance',
+    'complex tasks',
+    'less prequisitives',
+    'simplification']},
+ ```
+
+
 
 ## Milestone 5
 
