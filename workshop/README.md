@@ -135,11 +135,69 @@ One example of sentriment analysis is attached below.
     'simplification']},
  ```
 
+Let us now split the code to find the Negative and the Positive feedback.
+
+```python
+print("=== NEGATIVE ===\n"+'\n'.join([x['doc'] for x in dt['AzNegative.txt'] if x['sent']=='negative']))
+print("=== POSITIVE ===\n"+'\n'.join([x['doc'] for x in dt['Azpositive.txt'] if x['sent']=='positive']))
+```
+
+The output for this is:
+```
+=== NEGATIVE ===
+lack in demonstration
+i'd say sometimes it's overwhelming for business practitioners due to its compact design so maybe user interface could be made more business friendly (especially for companies in countries with non-english native language such as japan)
+it has a slower interface.
+when creating a vm fails
+the free credits last only 6 months :(
+when i started to use it, i found the interface a bit tricky to get to grips with
+=== POSITIVE ===
+it's user friendly
+it is easy to use
+azure is pretty easy to use with all the learning paths etc. and it is relatively easy to migrate (pay-as-you-go). azure is integrated with many cognitive services so one can store their
+simple to use
+they give free credits to students :)
+the free $100 a year for students
+
+```
+
+Now, individual keywords could be analyzed, and their frequency of occurence, average sentiment and dev value could be represented.
+
+```python
+w = {}
+for k,v in dt.items():
+    for doc in v:
+        for w in doc['key']:
+            if w in kw.keys():
+                kw[w].append(doc['pos_score']-doc['neg_score'])
+            else:
+                kw[w] = [doc['pos_score']-doc['neg_score']]
+
+df = pd.DataFrame([
+    {
+        "word" : w,
+        "num of occurrences" : len(l),
+        "average sentiment" : pd.Series(l).mean(),
+        "dev" : pd.Series(l).std()
+    }
+    for w,l in kw.items()])
+
+top_words = df.sort_values('num of occurrences',ascending=False).head(10)
+top_words
+
+```
+>Display output of table
+
+You can also view a scatterplot of the sentiments conveyed by the users.
+
+![Scatterplot]
 
 
-## Milestone 5
 
-```javascript
+## Milestone 5: Create a WordCloud
+
+
+```python
 //code snippets to aid in the building process
 ```
 
