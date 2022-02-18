@@ -16,8 +16,9 @@ In this workshop, we will discuss *the use of Microsoft Azure for Text Analytics
 
 ## Prerequisites
 
-*Install [VS Code](https://code.visualstudio.com/download)* <br>
-*Install [Python](https://www.python.org/downloads)*
+*For this workshop <br> 
+you need to have an Azure Account. You can get either the [Azure for Students](https://azure.microsoft.com/en-us/free/students/?WT.mc_id=academic-49822-dmitryso) version or use [Azure Free Trial](https://azure.microsoft.com/en-us/free/?WT.mc_id=academic-49822-dmitryso)* <br>
+*Remember to install [Python](https://www.python.org/downloads)*
 
 ## What students will learn
 
