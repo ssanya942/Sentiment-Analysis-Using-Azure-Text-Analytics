@@ -40,21 +40,51 @@ The data has been manually aggregated by collecting feedback from Azure users. C
 
 > *If you are an Azure user, you could amplify our database of user feedback by filling up this [feedback form.](https://forms.office.com/r/M5EuyHbTB3) The required modifications would be made in the data in this repository itself.*
 
-## Milestone 2
+## Milestone 2: Running the Notebook and Exploring the Data
+After you get the data, you need to open .......ipynb or Detailed.ipynb notebook and start writing code there, following the instructions inside the notebook.
 
-```javascript
-//code snippets to aid in the building process
+Note: There are two versions of the notebooks provided, and you can chose the one most suitable to you:
+There is also a notebook with the solution, which you can consult should you experience a problem you are not able to solve. However, we suggest you to try and solve all the problems yourself, using stack overflow as a reference to find solutions.
+
+
+
+## Milestone 3: Creating and Using the Text Analytics Endpoint
+We shall now be using the Text Analytics Service to analyze the data collected. At this point, you must have your Azure Subscription ready.
+
+Log into your [Azure Portal](https://portal.azure.com/#home) and create a new [Cognitive Resource for Language](https://docs.microsoft.com/azure/cognitive-services/language-service/overview/?WT.mc_id=academic-49822-dmitryso). Start creating the resource [here](https://ms.portal.azure.com/#create/Microsoft.CognitiveServicesTextAnalytics)
+
+After the creation of the resource, navigate to the *Keys and Endpoints* option under the *Resource Management* pane and note either of the keys and the endpoint. Once you have created the resource, you should go to the portal and copy Endpoint URL and Access key into the notebook.
+
+
+In order to call this service, the key and endpoint must be noted and copied.
+
+```python
+//from azure.core.credentials import AzureKeyCredential
+from azure.ai.textanalytics import TextAnalyticsClient, AnalyzeSentimentAction, ExtractKeyPhrasesAction
+
+credential = AzureKeyCredential("paste_your_key_here")
+cli = TextAnalyticsClient(endpoint="https://analyze-user-sentiments.cognitiveservices.azure.com/", credential=credential)
 ```
+Test the use of this service by performing a simple sentiment analysis. 
+```python
+def analyze(doc):
+    pol = cli.begin_analyze_actions(doc,actions=[AnalyzeSentimentAction(), ExtractKeyPhrasesAction() ])
+    res = pol.result()
+    return [
+        { 
+        "doc" : d,
+        "sent" : sent.sentiment if not sent.is_error else None,
+        "pos_score" : sent.confidence_scores.positive if not sent.is_error else None,
+        "neg_score" : sent.confidence_scores.negative if not sent.is_error else None,
+        "neu_score" : sent.confidence_scores.neutral if not sent.is_error else None,
+        "key" : keyw.key_phrases if not keyw.is_error else []
+        }
+      for d,(sent,keyw) in zip(doc,res)]
 
-> *tips, tricks, callouts*
+analyze(["I was so glad to be a part of this festival"]) 
 
-## Milestone 3
-
-```javascript
-//code snippets to aid in the building process
 ```
-
-> *tips, tricks, callouts*
+This code snippet is used to accept the text "*I was so glad to be a part of this festival*" and analyze the sentiment trying to be conveyed by the user. It returns the input string, the sending success message, the positive score,the negative score, the neutral score and the key. 
 
 ## Milestone 4
 
