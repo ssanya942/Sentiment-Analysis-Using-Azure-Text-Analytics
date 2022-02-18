@@ -23,11 +23,11 @@ In this workshop, we will discuss *the use of Microsoft Azure for Text Analytics
 
 ## What students will learn
 
-*In this workshop, students would learn to use Azure's Text Analytics service for performing a sentiment analysis on user data.*
+In this workshop, students would learn to use Azure's Text Analytics service for performing a sentiment analysis on user data.
 
-*add a screenshot of the completed *
 
-![image of completed project](images/placeholder.png)
+
+![image of completed project](images/output.png)
 
 ## Milestone 1
 
