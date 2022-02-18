@@ -27,15 +27,18 @@ In this workshop, students would learn to use Azure's Text Analytics service for
 
 
 
-![image of completed project](images/output.png)
+![image of completed project](images/output.jpg)
 
-## Milestone 1
+## Milestone 1: Getting and Understanding the Data
+The data has been manually aggregated by collecting feedback from Azure users. Check out the [Data](https://github.com/ssanya942/Sentiment-Analysis-Using-Azure-Text-Analytics/tree/main/workshop/Data) folder to access feedback data segregated into 5 files: <br>
+1. [AzComparison.txt](https://github.com/ssanya942/Sentiment-Analysis-Using-Azure-Text-Analytics/blob/main/workshop/Data/AzComparison.txt) contains a comparitive analysis of Azure with other cloud providers from the users' perspective. <br>
+2. [AzEduhub.txt](https://github.com/ssanya942/Sentiment-Analysis-Using-Azure-Text-Analytics/blob/main/workshop/Data/AzEduhub.txt) contains the users' overall insights regarding Azure <br>
+3. [AzNegative.txt](https://github.com/ssanya942/Sentiment-Analysis-Using-Azure-Text-Analytics/blob/main/workshop/Data/AzNegative.txt) contains the complaints users have against Azure <br>
+4. [Azpositive.txt](https://github.com/ssanya942/Sentiment-Analysis-Using-Azure-Text-Analytics/blob/main/workshop/Data/Azpositive.txt) contains positive user reviews on Azure
+5. [AzPMAdvice.txt](https://github.com/ssanya942/Sentiment-Analysis-Using-Azure-Text-Analytics/blob/main/workshop/Data/AzPMAdvice.txt) contains users' advice for Azure's Program Managers
 
-```javascript
-//code snippets to aid in the building process
-```
 
-> *tips, tricks, callouts*
+> *If you are an Azure user, you could amplify our database of user feedback by filling up this [feedback form.](https://forms.office.com/r/M5EuyHbTB3) The required modifications would be made in the data in this repository itself.*
 
 ## Milestone 2
 
