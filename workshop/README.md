@@ -198,7 +198,7 @@ You can also view a scatterplot of the sentiments conveyed by the users.
 
 
 ```python
-//code snippets to aid in the building process
+
 ```
 
 > *tips, tricks, callouts*
